@@ -112,7 +112,7 @@ except:
    print("") 
    scheduler = EulerDiscreteScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear")
    pipe = StableDiffusionPipeline.from_pretrained(model_path,scheduler=scheduler, safety_checker=None,torch_dtype=torch.float32)
-
+   continue
 
 # Display Message
 print("")
